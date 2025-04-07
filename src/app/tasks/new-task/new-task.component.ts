@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { CanDeactivateFn, Router, RouterLink } from '@angular/router';
 
 import { TasksService } from '../tasks.service';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-new-task',
   standalone: true,
-  imports: [FormsModule, RouterLink],
+  imports: [FormsModule, RouterLink, ButtonComponent, ButtonComponent],
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
 })
@@ -37,12 +38,20 @@ export class NewTaskComponent {
   }
 }
 
-export const canLeaveEditPage: CanDeactivateFn<NewTaskComponent> = (component) => {
+export const canLeaveEditPage: CanDeactivateFn<NewTaskComponent> = (
+  component
+) => {
   if (component.submitted) {
     return true;
   }
-  if (component.enteredTitle() || component.enteredDate() || component.enteredSummary()) {
-    return window.confirm('Do you really want to leave? You will lose the entered data.')
+  if (
+    component.enteredTitle() ||
+    component.enteredDate() ||
+    component.enteredSummary()
+  ) {
+    return window.confirm(
+      'Do you really want to leave? You will lose the entered data.'
+    );
   }
   return true;
-}
+};
