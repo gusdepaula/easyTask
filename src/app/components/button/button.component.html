@@ -1,3 +1,15 @@
-<button [type]="type" [disabled]="disabled" [class]="class">
-  {{ label }}
+<a
+  *ngIf="routerLink() !== undefined"
+  routerLink="routerLink()"
+  [class]="class()"
+>
+  {{ label() }}
+</a>
+<button
+  *ngIf="routerLink() === undefined"
+  [type]="type()"
+  [disabled]="disabled()"
+  [class]="class()"
+>
+  {{ label() }}
 </button>

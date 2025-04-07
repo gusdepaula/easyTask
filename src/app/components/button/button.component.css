@@ -29,6 +29,7 @@ a.btn-link {
   padding: 0.35rem 1.25rem;
   border-radius: 4px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 button.btn-link:hover,

@@ -1,15 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'ds-button',
   standalone: true,
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
+  imports: [CommonModule],
 })
 export class ButtonComponent {
-  @Input() label: string = ''; // Texto do botão
-  @Input() type: 'button' | 'submit' | 'reset' = 'button'; // Tipo do botão
-  @Input() disabled: boolean = false; // Estado desabilitado
-  @Input() class: string = ''; // Classes CSS adicionais
-  @Input() public routerLink?: string; // Rota para navegação
+  label = input.required<string>(); // Texto do botão (obrigatório)
+  type = input<'button' | 'submit' | 'reset'>('button'); // Tipo do botão (opcional, com valor padrão)
+  disabled = input<boolean>(false); // Estado desabilitado (opcional, com valor padrão)
+  class = input<string>(''); // Classes CSS adicionais (opcional)
+  routerLink = input<string | undefined>(); // Rota para navegação (opcional)
 }
