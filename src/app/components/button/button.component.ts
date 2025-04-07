@@ -11,4 +11,5 @@ export class ButtonComponent {
   @Input() type: 'button' | 'submit' | 'reset' = 'button'; // Tipo do botão
   @Input() disabled: boolean = false; // Estado desabilitado
   @Input() class: string = ''; // Classes CSS adicionais
+  @Input() public routerLink?: string; // Rota para navegação
 }

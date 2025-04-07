@@ -9,11 +9,12 @@ import {
 } from '@angular/router';
 
 import { UsersService } from '../users.service';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-user-tasks',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, ButtonComponent],
   templateUrl: './user-tasks.component.html',
   styleUrl: './user-tasks.component.css',
 })
@@ -47,5 +48,5 @@ export const resolveTitle: ResolveFn<string> = (
   activatedRoute,
   routerState
 ) => {
-  return resolveUserName(activatedRoute, routerState) + '\'s Tasks'
-}
+  return resolveUserName(activatedRoute, routerState) + "'s Tasks";
+};

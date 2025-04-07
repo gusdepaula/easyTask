@@ -2,7 +2,7 @@
   <header>
     <h2>{{ userName() }} Tasks</h2>
     <menu>
-      <a routerLink="tasks/new">Add Task</a>
+      <ds-button [routerLink]="'tasks/new'" label="Add Task" class="btn-link" />
     </menu>
   </header>
 
