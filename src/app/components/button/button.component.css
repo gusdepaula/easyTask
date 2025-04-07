@@ -8,21 +8,19 @@ button {
   color: #fff;
 }
 
-button.submit {
+.btn-submit {
   background-color: #9c73ca;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
-button.submit:hover,
-button.submit:active {
+.btn-submit:hover,
+.btn-submit:active {
   background-color: #895cce;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Novo estilo para btn-link */
-button.btn-link,
-a.btn-link {
+.btn-link {
   background-color: transparent;
   color: #9c73ca;
   text-decoration: none;
@@ -32,15 +30,13 @@ a.btn-link {
   cursor: pointer;
 }
 
-button.btn-link:hover,
-button.btn-link:active,
-a.btn-link:hover,
-a.btn-link:active {
+.btn-link:hover,
+.btn-link:active {
   background-color: rgba(156, 115, 202, 0.1);
   color: #895cce;
 }
 
-.complete {
+.btn-complete {
   font: inherit;
   font-size: 0.9rem;
   cursor: pointer;
@@ -53,8 +49,21 @@ a.btn-link:active {
   transition: all 0.3s ease;
 }
 
-.complete:hover,
-.complete button:active {
+.btn-complete:hover,
+.btn-complete:active {
   background-color: #4a0774;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sort {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sort:hover {
+  background-color: #0056b3;
 }

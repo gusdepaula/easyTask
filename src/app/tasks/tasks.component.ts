@@ -4,13 +4,14 @@ import { ResolveFn, RouterLink } from '@angular/router';
 import { TaskComponent } from './task/task.component';
 import { TasksService } from './tasks.service';
 import { Task } from './task/task.model';
+import { ButtonComponent } from '../components/button/button.component';
 
 @Component({
   selector: 'app-tasks',
   standalone: true,
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css',
-  imports: [TaskComponent, RouterLink],
+  imports: [TaskComponent, RouterLink, ButtonComponent],
 })
 export class TasksComponent {
   userTasks = input.required<Task[]>();
