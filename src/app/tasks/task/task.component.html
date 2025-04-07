@@ -4,7 +4,11 @@
     <time>{{ task().dueDate | date : 'fullDate' }}</time>
     <p>{{ task().summary }}</p>
     <p class="actions">
-      <ds-button label="Complete" class="complete" (click)="onComplete()" />
+      <ds-button
+        [label]="'Complete'"
+        class="btn-complete"
+        (click)="onComplete()"
+      />
     </p>
   </article>
 </app-card>
