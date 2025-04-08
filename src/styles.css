@@ -1,4 +1,5 @@
 @import url('./styles/variables.css');
+
 * {
   box-sizing: border-box;
 }
@@ -8,9 +9,13 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top left, #181023, #0b0519);
-  color: #c3b3d8;
+  font-family: var(--font-family); /* Usando a variável de fonte */
+  background: radial-gradient(
+    circle at top left,
+    var(--color-background-start),
+    var(--color-background-end)
+  ); /* Usando as variáveis de cor */
+  color: var(--color-text); /* Usando a variável de cor do texto */
   margin: 0;
   padding: 0;
   height: 100%;

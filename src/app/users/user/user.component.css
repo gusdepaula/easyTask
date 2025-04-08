@@ -1,6 +1,6 @@
 div {
-  border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 6px var(--color-shadow-div);
   overflow: hidden;
 }
 
@@ -9,8 +9,8 @@ a {
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 0.5rem;
-  background-color: #433352;
-  color: #c3b3d1;
+  background-color: var(--color-background-button);
+  color: var(--color-text-button);
   border: none;
   font: inherit;
   cursor: pointer;
@@ -23,20 +23,21 @@ a {
 a:hover,
 a:active,
 .selected {
-  background-color: #9965dd;
-  color: #150722;
+  background-color: var(--color-background-button-hover);
+  color: var(--color-text-button-hover);
 }
 
 img {
-  width: 2rem;
-  object-fit: contain;
+  width: var(--img-size);
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 50%;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 8px var(--color-shadow-img);
 }
 
 span {
   margin: 0;
   padding: 0;
-  font-size: 0.8rem;
+  font-size: var(--font-size-span);
   font-weight: normal;
 }

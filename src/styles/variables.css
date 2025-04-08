@@ -1,4 +1,3 @@
-/* Cores primárias */
 :root {
   --color-primary: #9c73ca;
   --color-primary-hover: #895cce;
@@ -27,4 +26,19 @@
   --color-header-gradient-start: #2c0a4c; /* Cor inicial do gradiente do header */
   --color-header-gradient-end: #450d80; /* Cor final do gradiente do header */
   --color-header-shadow: rgba(0, 0, 0, 0.6); /* Sombra do header */
+
+  --color-background-start: #181023; /* Cor inicial do gradiente de fundo */
+  --color-background-end: #0b0519; /* Cor final do gradiente de fundo */
+  --color-text: #c3b3d8; /* Cor do texto */
+
+  --color-background-button: #433352; /* Cor de fundo do botão */
+  --color-text-button: #c3b3d1; /* Cor do texto do botão */
+  --color-background-button-hover: #9965dd; /* Cor de fundo do botão ao passar o mouse */
+  --color-text-button-hover: #150722; /* Cor do texto do botão ao passar o mouse */
+  --color-shadow-img: rgba(0, 0, 0, 0.3); /* Sombra da imagem */
+  --color-shadow-div: rgba(0, 0, 0, 0.1); /* Sombra do div */
+
+  --border-radius: 6px; /* Raio da borda */
+  --font-size-span: 0.8rem; /* Tamanho da fonte do span */
+  --img-size: 2rem; /* Tamanho da imagem */
 }
