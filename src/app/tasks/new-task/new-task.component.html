@@ -14,13 +14,14 @@
   </p>
 
   <p>
-    <label for="summary">Summary</label>
-    <textarea
-      id="summary"
-      rows="5"
-      name="summary"
+    <ds-textarea
+      label="Summary"
       [(ngModel)]="enteredSummary"
-    ></textarea>
+      name="summary"
+      id="summary"
+      title="summary"
+      class="input-summary"
+    />
   </p>
 
   <p>

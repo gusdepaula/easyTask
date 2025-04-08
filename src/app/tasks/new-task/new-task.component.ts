@@ -5,6 +5,7 @@ import { CanDeactivateFn, Router, RouterLink } from '@angular/router';
 import { TasksService } from '../tasks.service';
 import { ButtonComponent } from '../../components/button/button.component';
 import { InputComponent } from '../../components/input/input.component';
+import { TextareaComponent } from '../../components/textarea/textarea.component';
 
 @Component({
   selector: 'app-new-task',
@@ -15,6 +16,7 @@ import { InputComponent } from '../../components/input/input.component';
     ButtonComponent,
     ButtonComponent,
     InputComponent,
+    TextareaComponent,
   ],
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
