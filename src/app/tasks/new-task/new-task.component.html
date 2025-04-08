@@ -1,8 +1,16 @@
 <h2>Add Task</h2>
 <form (ngSubmit)="onSubmit()">
   <p>
-    <label for="title">Title</label>
-    <input type="text" id="title" name="title" [(ngModel)]="enteredTitle" />
+    <ds-input
+      label="Title"
+      [(ngModel)]="enteredTitle"
+      type="text"
+      name="title"
+      id="title"
+      title="title"
+      placeholder="Enter task title"
+      class="input-title"
+    />
   </p>
 
   <p>
@@ -16,12 +24,14 @@
   </p>
 
   <p>
-    <label for="due-date">Due Date</label>
-    <input
-      type="date"
-      id="due-date"
-      name="due-date"
+    <ds-input
+      label="Due Date"
       [(ngModel)]="enteredDate"
+      type="date"
+      name="duo-date"
+      id="due-date"
+      title="duo-date"
+      class="input-date"
     />
   </p>
 
