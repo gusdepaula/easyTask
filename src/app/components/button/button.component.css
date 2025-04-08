@@ -5,24 +5,24 @@ button {
   padding: 0.35rem 1.25rem;
   border-radius: 4px;
   background-color: transparent;
-  color: #fff;
+  color: var(--color-text-dark);
 }
 
 .btn-submit {
-  background-color: #9c73ca;
+  background-color: var(--color-primary);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .btn-submit:hover,
 .btn-submit:active {
-  background-color: #895cce;
+  background-color: var(--color-primary-hover);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .btn-link {
   background-color: transparent;
-  color: #9c73ca;
+  color: var(--color-primary);
   text-decoration: none;
   padding: 0.35rem 1.25rem;
   border-radius: 4px;
@@ -32,16 +32,16 @@ button {
 
 .btn-link:hover,
 .btn-link:active {
-  background-color: rgba(156, 115, 202, 0.1);
-  color: #895cce;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-hover);
 }
 
 .btn-complete {
   font: inherit;
   font-size: 0.9rem;
   cursor: pointer;
-  background-color: #380774;
-  color: #decdf2;
+  background-color: var(--color-complete);
+  color: var(--color-text-light);
   border-radius: 4px;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -51,29 +51,31 @@ button {
 
 .btn-complete:hover,
 .btn-complete:active {
-  background-color: #4a0774;
+  background-color: var(--color-complete-hover);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .btn-sort {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-sort:hover {
-  background-color: #0056b3;
+  background-color: var(--color-secondary-hover);
 }
 
 .btn-cancel {
-  color: #bdadcf;
+  color: var(--color-neutral);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-cancel:hover,
 .btn-cancel:active {
-  color: #d0c2e1;
+  color: var(--color-neutral-hover);
 }

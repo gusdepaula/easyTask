@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./styles/variables.css');
 * {
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: radial-gradient(circle at top left, #181023, #0b0519);
   color: #c3b3d8;
   margin: 0;

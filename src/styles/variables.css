@@ -1,0 +1,22 @@
+/* Cores primárias */
+:root {
+  --color-primary: #9c73ca;
+  --color-primary-hover: #895cce;
+  --color-primary-light: #9c73ca1a;
+
+  /* Cores secundárias */
+  --color-secondary: #007bff;
+  --color-secondary-hover: #0056b3;
+
+  /* Cores de ação */
+  --color-complete: #380774;
+  --color-complete-hover: #4a0774;
+
+  /* Cores neutras */
+  --color-neutral: #bdadcf;
+  --color-neutral-hover: #d0c2e1;
+
+  /* Texto */
+  --color-text-light: #decdf2;
+  --color-text-dark: #000c19;
+}
