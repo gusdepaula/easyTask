@@ -1,5 +1,4 @@
-import { CanMatchFn, RedirectCommand, Router, Routes } from '@angular/router';
-import { inject } from '@angular/core';
+import { Routes } from '@angular/router';
 import { NoTaskComponent } from './tasks/no-task/no-task.component';
 import {
   UserTasksComponent,

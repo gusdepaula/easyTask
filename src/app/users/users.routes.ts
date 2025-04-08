@@ -1,9 +1,8 @@
-import { ResolveFn, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import {
   NewTaskComponent,
   canLeaveEditPage,
 } from '../tasks/new-task/new-task.component';
-import { TaskComponent } from '../tasks/task/task.component';
 import { resolveUserTasks, TasksComponent } from '../tasks/tasks.component';
 import { TasksService } from '../tasks/tasks.service';
 
@@ -19,10 +18,6 @@ export const routes: Routes = [
       },
       {
         path: 'tasks', // <your-domain>/users/<uid>/tasks
-        // loadComponent: () =>
-        //   import('../tasks/tasks.component').then(
-        //     (module) => module.TasksComponent
-        //   ),
         component: TasksComponent,
         runGuardsAndResolvers: 'always',
         resolve: {
