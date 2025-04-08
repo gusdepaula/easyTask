@@ -21,32 +21,23 @@ import { ButtonComponent } from '../../components/button/button.component';
 export class UserTasksComponent {
   userName = input.required<string>();
   message = input.required<string>();
-  // private activatedRoute = inject(ActivatedRoute);
-
-  // ngOnInit(): void {
-  //   this.activatedRoute.data.subscribe({
-  //     next: data => {
-  //       console.log(data);
-  //     }
-  //   })
-  // }
 }
 
 export const resolveUserName: ResolveFn<string> = (
-  activatedRoute: ActivatedRouteSnapshot,
+  activatedRoute: ActivatedRouteSnapshot, // Contém informações sobre a rota ativa
   routerState: RouterStateSnapshot
 ) => {
-  const usersService = inject(UsersService);
+  const usersService = inject(UsersService); // Injeta o serviço de usuários
   const userName =
     usersService.users.find(
-      (u) => u.id === activatedRoute.paramMap.get('userId')
-    )?.name || '';
-  return userName;
+      (u) => u.id === activatedRoute.paramMap.get('userId') // Busca o usuário pelo ID na rota
+    )?.name || ''; // Retorna o nome do usuário ou uma string vazia se não encontrado
+  return userName; // Retorna o nome do usuário
 };
 
 export const resolveTitle: ResolveFn<string> = (
-  activatedRoute,
+  activatedRoute, // Contém informações sobre a rota ativa
   routerState
 ) => {
-  return resolveUserName(activatedRoute, routerState) + "'s Tasks";
+  return resolveUserName(activatedRoute, routerState) + "'s Tasks"; // Concatena o nome do usuário com "'s Tasks"
 };

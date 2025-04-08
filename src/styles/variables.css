@@ -23,4 +23,8 @@
   --color-label: #ab9ac0; /* Cor do texto do label */
   --color-border: #ab9ac0; /* Cor da borda do input/textarea */
   --color-background: #d0c2e1; /* Cor de fundo do input/textarea */
+
+  --color-header-gradient-start: #2c0a4c; /* Cor inicial do gradiente do header */
+  --color-header-gradient-end: #450d80; /* Cor final do gradiente do header */
+  --color-header-shadow: rgba(0, 0, 0, 0.6); /* Sombra do header */
 }

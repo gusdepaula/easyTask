@@ -8,21 +8,10 @@ import {
 } from './users/user-tasks/user-tasks.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-const dummyCanMatch: CanMatchFn = (route, segments) => {
-  const router = inject(Router);
-  const shouldGetAccess = Math.random();
-  if (shouldGetAccess < 1) {
-    return true;
-  }
-  return new RedirectCommand(router.parseUrl('/unauthorized'));
-};
-
 export const routes: Routes = [
   {
     path: '', // <your-domain>/
     component: NoTaskComponent,
-    // redirectTo: '/users/u1',
-    // pathMatch: 'full'
     title: 'No task selected',
   },
   {
@@ -30,7 +19,6 @@ export const routes: Routes = [
     component: UserTasksComponent,
     loadChildren: () =>
       import('./users/users.routes').then((module) => module.routes),
-    canMatch: [dummyCanMatch],
     data: {
       message: 'Hello!',
     },
