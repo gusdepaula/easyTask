@@ -2,7 +2,7 @@ label {
   display: block;
   font-weight: bold;
   font-size: 0.85rem;
-  color: #ab9ac0;
+  color: var(--color-label); /* Usando a variável de cor */
   margin-bottom: 0.25rem;
 }
 
@@ -12,6 +12,6 @@ textarea {
   font: inherit;
   padding: 0.25rem 0.25rem;
   border-radius: 4px;
-  border: 1px solid #ab9ac0;
-  background-color: #d0c2e1;
+  border: 1px solid var(--color-border); /* Usando a variável de cor */
+  background-color: var(--color-background); /* Usando a variável de cor */
 }

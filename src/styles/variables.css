@@ -19,4 +19,8 @@
   /* Texto */
   --color-text-light: #decdf2;
   --color-text-dark: #000c19;
+
+  --color-label: #ab9ac0; /* Cor do texto do label */
+  --color-border: #ab9ac0; /* Cor da borda do input/textarea */
+  --color-background: #d0c2e1; /* Cor de fundo do input/textarea */
 }
