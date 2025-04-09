@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family); /* Usando a variável de fonte */
+  font-family: 'Poppins', sans-serif;
   background: radial-gradient(
     circle at top left,
     var(--color-background-start),

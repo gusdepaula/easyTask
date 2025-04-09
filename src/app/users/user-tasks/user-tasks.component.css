@@ -1,9 +1,10 @@
 #tasks {
   padding: 1rem;
-  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   max-height: 60vh;
   overflow: auto;
-  background-color: #3a2c54;
+  background-color: var(--color-tasks-bg);
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 
 h2 {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: var(--font-size-span);
   width: 60%;
   text-wrap: balance;
 }
@@ -29,8 +30,8 @@ menu {
 menu a {
   font: inherit;
   cursor: pointer;
-  color: #181223;
-  background-color: #9965dd;
+  color: var(--color-text-button-hover);
+  background-color: var(--color-background-button);
   border-radius: 4px;
   border: none;
   padding: 0.35rem 0.8rem;
@@ -40,7 +41,7 @@ menu a {
 
 menu a:hover,
 menu a:active {
-  background-color: #a565dd
+  background-color: var(--color-background-button-hover);
 }
 
 @media (min-width: 768px) {

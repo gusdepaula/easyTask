@@ -1,44 +1,44 @@
 :root {
-  --color-primary: #9c73ca;
-  --color-primary-hover: #895cce;
-  --color-primary-light: #9c73ca1a;
+  --color-primary: #ff6600; /* Laranja Itaú */
+  --color-primary-hover: #e65c00;
+  --color-primary-light: #ff66001a;
 
   /* Cores secundárias */
-  --color-secondary: #007bff;
-  --color-secondary-hover: #0056b3;
+  --color-secondary: #673ab7; /* Roxo mais fechado */
+  --color-secondary-hover: #5a2ea3;
 
   /* Cores de ação */
-  --color-complete: #380774;
-  --color-complete-hover: #4a0774;
+  --color-complete: #ff8200; /* Laranja Itaú padrão */
+  --color-complete-hover: #e67300;
 
   /* Cores neutras */
-  --color-neutral: #bdadcf;
-  --color-neutral-hover: #d0c2e1;
+  --color-neutral: #cfd1d3;
+  --color-neutral-hover: #e6e6e6;
 
   /* Texto */
-  --color-text-light: #decdf2;
-  --color-text-dark: #000c19;
+  --color-text-light: #fefefe;
+  --color-text-dark: #1a1a1a;
 
-  --color-label: #ab9ac0; /* Cor do texto do label */
-  --color-border: #ab9ac0; /* Cor da borda do input/textarea */
-  --color-background: #d0c2e1; /* Cor de fundo do input/textarea */
+  --color-label: #666666;
+  --color-border: #999999;
+  --color-background: #f5f5f5;
 
-  --color-header-gradient-start: #2c0a4c; /* Cor inicial do gradiente do header */
-  --color-header-gradient-end: #450d80; /* Cor final do gradiente do header */
-  --color-header-shadow: rgba(0, 0, 0, 0.6); /* Sombra do header */
+  --color-header-gradient-start: #ff6600;
+  --color-header-gradient-end: #cc5200;
+  --color-header-shadow: rgba(0, 0, 0, 0.6);
 
-  --color-background-start: #181023; /* Cor inicial do gradiente de fundo */
-  --color-background-end: #0b0519; /* Cor final do gradiente de fundo */
-  --color-text: #c3b3d8; /* Cor do texto */
+  --color-background-start: #ffffff;
+  --color-background-end: #f2f2f2;
+  --color-text: #333333;
 
-  --color-background-button: #433352; /* Cor de fundo do botão */
-  --color-text-button: #c3b3d1; /* Cor do texto do botão */
-  --color-background-button-hover: #9965dd; /* Cor de fundo do botão ao passar o mouse */
-  --color-text-button-hover: #150722; /* Cor do texto do botão ao passar o mouse */
-  --color-shadow-img: rgba(0, 0, 0, 0.3); /* Sombra da imagem */
-  --color-shadow-div: rgba(0, 0, 0, 0.1); /* Sombra do div */
+  --color-background-button: #ff6600;
+  --color-text-button: #ffffff;
+  --color-background-button-hover: #cc5200;
+  --color-text-button-hover: #ffffff;
+  --color-shadow-img: rgba(0, 0, 0, 0.2);
+  --color-shadow-div: rgba(0, 0, 0, 0.1);
 
-  --border-radius: 6px; /* Raio da borda */
-  --font-size-span: 0.8rem; /* Tamanho da fonte do span */
-  --img-size: 2rem; /* Tamanho da imagem */
+  --border-radius: 6px;
+  --font-size-span: 0.8rem;
+  --img-size: 2rem;
 }
