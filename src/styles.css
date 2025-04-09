@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,9 +19,16 @@ body {
     circle at top left,
     var(--color-background-start),
     var(--color-background-end)
-  ); /* Usando as variáveis de cor */
-  color: var(--color-text); /* Usando a variável de cor do texto */
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  );
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  body {
+    min-height: 100%;
+  }
+
+  main {
+    min-height: 100%;
+  }
 }
