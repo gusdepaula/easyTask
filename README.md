@@ -1,27 +1,61 @@
-# Routing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+# 📝 EasyTask
 
-## Development server
+O **EasyTask** é uma aplicação web desenvolvida para ajudar usuários a **organizar e acompanhar tarefas de forma simples e eficiente**. Com uma interface amigável e intuitiva, o sistema oferece funcionalidades essenciais para o gerenciamento diário de afazeres.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🔗 Acesse o projeto online
+👉 [https://easy-task-wheat.vercel.app/](https://easy-task-wheat.vercel.app/)
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Tecnologias Utilizadas
 
-## Build
+### Frontend
+- **Framework:** [Angular](https://angular.io/) v18.0.1
+- **Estilização:** Design System próprio para componentes como botões e inputs
+- **Build & Deploy:** Angular CLI (ferramentas nativas)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Hospedagem
+- **Plataforma:** [Vercel](https://vercel.com/)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📌 Funcionalidades
 
-## Running end-to-end tests
+- ✅ Adicionar, editar e remover tarefas
+- ✅ Marcar tarefas como concluídas
+- ✅ Interface responsiva e amigável
+- ✅ Atualizações em tempo real
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 📂 Como rodar localmente
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/easy-task.git
+```
+
+### Acesse o diretório
+```bash
+cd easy-task
+```
+
+### Instale as dependências
+```bash
+npm install
+```
+
+### Rode o projeto
+```bash
+ng serve
+```
+
+A aplicação estará disponível em `http://localhost:4200/`.
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por [Gustavo de Paula](https://github.com/gusdepaula) com ❤️ e Angular.
