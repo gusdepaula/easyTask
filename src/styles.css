@@ -10,16 +10,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(
-    circle at top left,
-    var(--color-background-start),
-    var(--color-background-end)
-  );
   color: var(--color-text);
 }
 

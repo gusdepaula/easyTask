@@ -3,8 +3,8 @@ a {
   font: inherit;
   cursor: pointer;
   border: none;
-  padding: 0.35rem 1.25rem;
-  border-radius: 4px;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
   background-color: transparent;
   color: var(--color-text-dark);
 }
@@ -69,4 +69,11 @@ a {
 .btn-cancel:hover,
 .btn-cancel:active {
   background-color: var(--color-neutral-hover);
+}
+
+@media (max-width: 768px) {
+  button,
+  a {
+    padding: 6px 12px;
+  }
 }

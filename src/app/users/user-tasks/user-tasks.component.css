@@ -2,7 +2,7 @@
   padding: 1rem;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  max-height: 60vh;
+  max-height: 70vh;
   overflow: auto;
   background-color: var(--color-tasks-bg);
 }
@@ -23,7 +23,7 @@ h2 {
 }
 
 menu {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 

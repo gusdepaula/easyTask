@@ -6,12 +6,11 @@ label {
   margin-bottom: 0.25rem;
 }
 
-input,
 textarea {
   width: 100%;
   font: inherit;
-  padding: 0.25rem 0.25rem;
-  border-radius: 4px;
-  border: 1px solid var(--color-border); /* Usando a variável de cor */
-  background-color: var(--color-background); /* Usando a variável de cor */
+  padding: 12px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
 }
