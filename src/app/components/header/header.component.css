@@ -5,12 +5,12 @@ header {
   gap: 1rem;
   width: 90%;
   max-width: 50rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto var(--spacing-lg) auto;
   text-align: center;
   background: var(--color-primary);
-  padding: 1rem;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  padding: var(--spacing-sm);
+  border-bottom-right-radius: var(--border-radius-lg);
+  border-bottom-left-radius: var(--border-radius-lg);
 }
 
 img {
@@ -20,7 +20,7 @@ img {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
   margin: 0;
   padding: 0;
   color: var(--color-text-light);
@@ -28,14 +28,14 @@ h1 {
 
 p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
   text-wrap: balance;
   color: var(--color-text-light);
 }
 
 @media (min-width: 768px) {
   header {
-    padding: 2rem;
+    padding: var(--spacing-lg);
   }
 
   img {
@@ -43,7 +43,7 @@ p {
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-lg);
     margin: 0;
     padding: 0;
   }

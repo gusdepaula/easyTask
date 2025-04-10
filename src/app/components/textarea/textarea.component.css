@@ -1,16 +1,16 @@
 label {
   display: block;
   font-weight: bold;
-  font-size: 0.85rem;
-  color: var(--color-label); /* Usando a variável de cor */
-  margin-bottom: 0.25rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-label);
+  margin-bottom: var(--spacing-xxs);
 }
 
 textarea {
   width: 100%;
   font: inherit;
-  padding: 12px;
-  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-border);
   background-color: var(--color-background);
 }

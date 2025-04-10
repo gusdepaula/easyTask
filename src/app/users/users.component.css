@@ -1,13 +1,14 @@
 #users {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--spacing-md);
   justify-content: center;
-  padding: 1rem;
+  padding: var(--spacing-md);
   width: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 0 2rem 0;
+  margin-bottom: var(--spacing-lg);
+  margin-top: 0;
 }
 
 #users li {
@@ -27,8 +28,8 @@
 
 @media (max-width: 768px) {
   #users {
-    padding: 0.5rem;
-    gap: 0.25rem;
+    padding: var(--spacing-xs);
+    gap: var(--spacing-xxs);
   }
 
   #users li {

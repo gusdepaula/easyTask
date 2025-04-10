@@ -1,14 +1,14 @@
 :root {
-  --color-primary: #ff6600; /* Laranja Itaú */
+  /* Cores primárias */
+  --color-primary: #ff6600;
   --color-primary-hover: #e65c00;
-  --color-primary-light: #ff66001a;
 
   /* Cores secundárias */
-  --color-secondary: #673ab7; /* Roxo mais fechado */
+  --color-secondary: #673ab7;
   --color-secondary-hover: #5a2ea3;
 
   /* Cores de ação */
-  --color-complete: #ff8200; /* Laranja Itaú padrão */
+  --color-complete: #ff8200;
   --color-complete-hover: #e67300;
 
   /* Cores neutras */
@@ -25,10 +25,7 @@
 
   --color-header-gradient-start: #ff6600;
   --color-header-gradient-end: #cc5200;
-  --color-header-shadow: rgba(0, 0, 0, 0.6);
 
-  --color-background-start: #ffffff;
-  --color-background-end: #f2f2f2;
   --color-text: #333333;
 
   --color-background-button: #ff6600;
@@ -38,7 +35,25 @@
   --color-shadow-img: rgba(0, 0, 0, 0.2);
   --color-shadow-div: rgba(0, 0, 0, 0.1);
 
-  --border-radius: 12px;
-  --font-size-span: 0.8rem;
+  /* Espaçamentos */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2rem; /* 32px */
+
+  /* Tipografia */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Bordas */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
   --img-size: 2rem;
 }
